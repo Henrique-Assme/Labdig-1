@@ -41,14 +41,17 @@ entity fluxo_dados is
              registraR                : in std_logic; 
              escreveM                 : in std_logic; 
 				     resetaMemoria            : in std_logic;
+             errou                    : in std_logic;
              chaves                   : in std_logic_vector (3 downto 0);
-             jogadaIgualRodada      : out std_logic;  
+             jogadaIgualRodada        : out std_logic;  
              jogadaCorreta            : out std_logic; 
              fimCR                    : out std_logic; 
              fimCJ                    : out std_logic; 
              timeout                  : out std_logic; 
              timeoutJogadaInicial     : out std_logic; 
-             jogada_feita             : out std_logic; 
+             jogada_feita             : out std_logic;
+             vidaZerada               : out std_logic;
+             vidas                    : out std_logic_vector (3 downto 0);
              db_contagem              : out std_logic_vector (3 downto 0); 
              db_memoria               : out std_logic_vector (3 downto 0);
              db_jogada                : out std_logic_vector (3 downto 0);
@@ -78,6 +81,8 @@ architecture estrutural of fluxo_dados is
   signal contaT             : std_logic;
   --timer
   signal contaJogadaInicial : std_logic;
+  --vidas
+  signal s_vidas            : std_logic_vector(3 downto 0); 
 
   component contador_163
     port (
@@ -307,6 +312,16 @@ begin
     );
   
     contaJogadaInicial <= not zeraJogadaInicial;
-
+    s_vidas <= "0101" when zeraCR='1'; --reseta as vidas quando começa o jogo de novo
+    vidas <= s_vidas;
+    process(errou) is
+      begin
+        if(errou = '1' and s_vidas /= "0000") then 
+          s_vidas <= std_logic_vector(to_unsigned(to_integer(unsigned(s_vidas)) - 1, 4));
+          vidas <= s_vidas;
+        elsif s_vidas="0000" then
+          vidaZerada <= '1';
+        end if;
+    end process;
 end architecture estrutural;
 

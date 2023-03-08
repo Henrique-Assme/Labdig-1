@@ -30,6 +30,8 @@ entity unidade_controle is
         timeout              : in std_logic; -- sinal recebe se o tempo de fazer uma jogada já terminou ou não
         timeoutJogadaInicial : in std_logic;
         enderecoFinal        : in std_logic; -- sinal sinaliza se está na ultima rodada do ciclo atual
+        continuar            : in std_logic; -- sinal que quando 1, vai para o estado de perder uma vida
+        vidaZerada           : in std_logic;
         zeraCR               : out std_logic;
         zeraCJ               : out std_logic;
         contaCR              : out std_logic;
@@ -50,7 +52,7 @@ entity unidade_controle is
 end entity;
 
 architecture fsm of unidade_controle is
-    type t_estado is (inicial, inicializa, mostraJogadas, espera, registra, compara, escreve, incrementaEndereco, proximaRodada, proximoDado, fimA, fimE, fimT);
+    type t_estado is (inicial, inicializa, mostraJogadas, espera, registra, compara, escreve, incrementaEndereco, proximaRodada, proximoDado, fimA, fimE, fimT, perdeVida);
     signal Eatual, Eprox: t_estado;
 begin
 
@@ -66,28 +68,31 @@ begin
 
     -- logica de proximo estado
     Eprox <=
-        inicial             when  Eatual=inicial and iniciar='0' else
-        inicializa          when  Eatual=inicial and iniciar='1' else
-        mostraJogadas       when  Eatual=inicializa else
-        mostraJogadas       when  Eatual=mostraJogadas and timeoutJogadaInicial='0' else
-        espera              when  Eatual=mostraJogadas and timeoutJogadaInicial='1' else
-        espera              when  Eatual=espera and jogada='0' and timeout='0' else
-        fimT                when  Eatual=espera and timeout='1' else
-        registra            when  Eatual=espera and jogada='1' and timeout='0' else
-        compara             when  Eatual=registra else
-        proximoDado         when  Eatual=compara and igual='1' and enderecoFinal='0' and fim='0' else
-        espera              when  Eatual=proximoDado else
-        incrementaEndereco  when  Eatual=compara and igual='1' and enderecoFinal='1' and fim='0' else
-        escreve             when  Eatual=incrementaEndereco else
-		escreve             when  Eatual=escreve and timeout='0' and jogada='0' else
-		fimT                when  Eatual=escreve and timeout='1' else
-        proximaRodada       when  Eatual=escreve and timeout='0' and jogada='1' else
-        espera              when  Eatual=proximaRodada else
-        fimA                when  Eatual=compara and igual='1' and fim='1' else
-        fimE                when  Eatual=compara and igual='0' else
-        fimA                when  Eatual=fimA and iniciar='0' else
-        fimE                when  Eatual=fimE and iniciar='0' else
-        fimT                when  Eatual=fimT and iniciar='0' else
+        inicial             when Eatual=inicial and iniciar='0' else
+        inicializa          when Eatual=inicial and iniciar='1' else
+        mostraJogadas       when Eatual=inicializa else
+        mostraJogadas       when Eatual=mostraJogadas and timeoutJogadaInicial='0' else
+        espera              when Eatual=mostraJogadas and timeoutJogadaInicial='1' else
+        espera              when Eatual=espera and jogada='0' and timeout='0' else
+        fimT                when Eatual=espera and timeout='1' else
+        registra            when Eatual=espera and jogada='1' and timeout='0' else
+        compara             when Eatual=registra else
+        proximoDado         when Eatual=compara and igual='1' and enderecoFinal='0' and fim='0' else
+        espera              when Eatual=proximoDado else
+        incrementaEndereco  when Eatual=compara and igual='1' and enderecoFinal='1' and fim='0' else
+        escreve             when Eatual=incrementaEndereco else
+		escreve             when Eatual=escreve and timeout='0' and jogada='0' else
+		fimT                when Eatual=escreve and timeout='1' else
+        proximaRodada       when Eatual=escreve and timeout='0' and jogada='1' else
+        espera              when Eatual=proximaRodada else
+        fimA                when Eatual=compara and igual='1' and fim='1' else
+        fimE                when Eatual=compara and igual='0' else
+        fimA                when Eatual=fimA and iniciar='0' else
+        fimE                when Eatual=fimE and iniciar='0' else
+        perdeVida           when Eatual=fimE and vidaZerada='0' and continuar='1' else
+        fimT                when Eatual=fimT and iniciar='0' else
+        perdeVida           when Eatual=fimT and vidaZerada='0' and continuar='1' else
+        espera              when Eatual=perdeVida else
         inicializa;
 
     -- logica de saída (maquina de Moore)
@@ -107,7 +112,7 @@ begin
                 '1' when inicial,
                 '1' when proximaRodada,
                 '1' when proximoDado,
-                '1' when mostraJogadas
+                '1' when mostraJogadas,
                 '0' when others;
     
     with Eatual select
@@ -177,7 +182,8 @@ begin
                      "1000" when escreve,            -- 8
                      "1001" when fimT,               -- 9, mostra um t no hex      
                      "1010" when fimA,               -- A
-                     "1011" when incrementaEndereco, -- B  
+                     "1011" when incrementaEndereco, -- B
+                     "1100" when perdeVida,          -- C 
                      "1110" when fimE,               -- E
                      "1111" when others;             -- F
 

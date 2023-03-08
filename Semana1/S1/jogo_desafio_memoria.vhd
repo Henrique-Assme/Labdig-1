@@ -6,6 +6,7 @@ entity jogo_desafio_memoria is
         clock                   : in  std_logic;
         reset                   : in  std_logic;
         iniciar                 : in  std_logic;
+        continuar               : in  std_logic;
         botoes                  : in  std_logic_vector (3 downto 0);
         leds                    : out std_logic_vector (3 downto 0);
         pronto                  : out std_logic;
@@ -16,7 +17,8 @@ entity jogo_desafio_memoria is
         db_rodada               : out std_logic_vector (6 downto 0);
         db_estado               : out std_logic_vector (6 downto 0);
         db_jogadafeita          : out std_logic_vector (6 downto 0);
-        db_jogadaIgualRodada  : out std_logic;
+        db_vidas                : out std_logic_vector (6 downto 0);
+        db_jogadaIgualRodada    : out std_logic;
         db_jogada_correta       : out std_logic;
         db_timeout              : out std_logic
     );
@@ -39,15 +41,18 @@ architecture estrutural of jogo_desafio_memoria is
     signal uc_ligaLed              : std_logic;
     signal uc_df_escreveJogada     : std_logic;
 	signal uc_df_resetaMemoria     : std_logic;
+    signal uc_df_errou             : std_logic;
 
     --sinais que saem do DF
     signal df_uc_jogadaIgualRodada    : std_logic;
     signal df_uc_jogadaCorreta        : std_logic;
     signal df_fimCR                   : std_logic;
     signal df_fimCJ                   : std_logic;
+    signal df_vidas                   : std_logic_vector(3 downto 0);
     signal df_uc_timeout              : std_logic;
     signal df_uc_timeoutJogadaInicial : std_logic;
     signal df_uc_jogadaFeita          : std_logic;
+    signal df_uc_vidaZerada           : std_logic;
     signal df_hex_contagem            : std_logic_vector(3 downto 0); 
     signal df_hex_memoria             : std_logic_vector(3 downto 0); 
     signal df_hex_jogada              : std_logic_vector(3 downto 0); 
@@ -62,7 +67,7 @@ architecture estrutural of jogo_desafio_memoria is
         port (
             clock                    : in std_logic; 
             zeraCR                   : in std_logic; 
-            zeraCJ                   : in std_logic; 
+            zeraCJ                   : in std_logic;  
             contaCR                  : in std_logic; 
             contaCJ                  : in std_logic; 
             zeraT                    : in std_logic; 
@@ -71,14 +76,17 @@ architecture estrutural of jogo_desafio_memoria is
             registraR                : in std_logic; 
             escreveM                 : in std_logic; 
             resetaMemoria            : in std_logic;
-            chaves                   : in std_logic_vector (3 downto 0); 
+            errou                    : in std_logic;
+            chaves                   : in std_logic_vector (3 downto 0);
             jogadaIgualRodada        : out std_logic;  
             jogadaCorreta            : out std_logic; 
             fimCR                    : out std_logic; 
             fimCJ                    : out std_logic; 
             timeout                  : out std_logic; 
             timeoutJogadaInicial     : out std_logic; 
-            jogada_feita             : out std_logic;  
+            jogada_feita             : out std_logic;
+            vidaZerada               : out std_logic;
+            vidas                    : out std_logic_vector (3 downto 0);
             db_contagem              : out std_logic_vector (3 downto 0); 
             db_memoria               : out std_logic_vector (3 downto 0);
             db_jogada                : out std_logic_vector (3 downto 0);
@@ -95,17 +103,19 @@ architecture estrutural of jogo_desafio_memoria is
             fim                  : in std_logic;
             jogada               : in std_logic;
             igual                : in std_logic;
-            timeout              : in std_logic; 
+            timeout              : in std_logic; -- sinal recebe se o tempo de fazer uma jogada já terminou ou não
             timeoutJogadaInicial : in std_logic;
-            enderecoFinal        : in std_logic; 
+            enderecoFinal        : in std_logic; -- sinal sinaliza se está na ultima rodada do ciclo atual
+            continuar            : in std_logic; -- sinal que quando 1, vai para o estado de perder uma vida
+            vidaZerada           : in std_logic;
             zeraCR               : out std_logic;
             zeraCJ               : out std_logic;
             contaCR              : out std_logic;
             contaCJ              : out std_logic;
-            zeraT                : out std_logic; 
+            zeraT                : out std_logic; --zera o timer
             zeraJogadaInicial    : out std_logic;
             zeraR                : out std_logic;
-            registraR            : out std_logic; 
+            registraR            : out std_logic; --df
             acertou              : out std_logic;
             errou                : out std_logic;
             perdeTimeout         : out std_logic;    
@@ -145,7 +155,8 @@ begin
             zeraR => uc_df_zeraR,
             registraR => uc_df_registraR, 
             escreveM => uc_df_escreveJogada,    
-            resetaMemoria => uc_df_resetaMemoria,                      
+            resetaMemoria => uc_df_resetaMemoria,    
+            errou => uc_df_errou,                  
             chaves => botoes,
             jogadaIgualRodada => df_uc_jogadaIgualRodada, --saidas
             jogadaCorreta => df_uc_jogadaCorreta, 
@@ -154,6 +165,8 @@ begin
             timeout => df_uc_timeout,
             timeoutJogadaInicial => df_uc_timeoutJogadaInicial,
             jogada_feita => df_uc_jogadaFeita,
+            vidaZerada => df_uc_vidaZerada,
+            vidas => df_vidas,
             db_contagem => df_hex_contagem,       
             db_memoria => df_hex_memoria,       
             db_jogada => df_hex_jogada,
@@ -174,6 +187,8 @@ begin
             timeout => df_uc_timeout,
             timeoutJogadaInicial => df_uc_timeoutJogadaInicial,
             enderecoFinal => df_uc_jogadaIgualRodada,
+            continuar => continuar,
+            vidaZerada => df_uc_vidaZerada,
             zeraCR => uc_df_zeraCR, --saidas
             zeraCJ => uc_df_zeraCJ,
             contaCR => uc_df_contaCR,
