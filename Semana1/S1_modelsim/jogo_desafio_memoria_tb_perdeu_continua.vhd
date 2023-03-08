@@ -20,10 +20,10 @@ use ieee.std_logic_1164.all;
 use std.textio.all;
 
 -- entidade do testbench
-entity jogo_desafio_memoria_tb_perdeu_timeout is
+entity jogo_desafio_memoria_tb_perdeu_continua is
 end entity;
 
-architecture tb of jogo_desafio_memoria_tb_perdeu_timeout is
+architecture tb of jogo_desafio_memoria_tb_perdeu_continua is
 
   -- Componente a ser testado (Device Under Test -- DUT)
   component jogo_desafio_memoria
