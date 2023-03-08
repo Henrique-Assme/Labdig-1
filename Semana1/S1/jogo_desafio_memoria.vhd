@@ -242,6 +242,12 @@ begin
             sseg => db_rodada
         );
 
+    HEX4: hexa7seg --mostra o endereço atual, contador secundário
+        port map (
+            hexa => df_vidas,
+            sseg => db_vidas
+        );
+
     HEX5: hexa7seg_modificado
         port map (
             hexa => uc_hex_estado,
