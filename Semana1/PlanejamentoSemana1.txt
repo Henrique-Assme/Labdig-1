@@ -1,0 +1,4 @@
+1) adicionar sistema de vida 
+2) adicionar o timer num hexadecimal
+3) adicionar as palavras  "perdeu", "ganhou" e "errou" no hexadecimal
+4) adcionar o sistema de níveis
