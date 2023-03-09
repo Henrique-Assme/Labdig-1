@@ -183,6 +183,7 @@ begin
 
     continuar_in <= '1';
     wait for 10*clockPeriod;
+    continuar_in <= '0';
 
     ---- jogada #1 (chaves=0001 e 10 clocks de duracao)
     botoes_in <= "0001";
@@ -200,18 +201,17 @@ begin
 
     continuar_in <= '1';
     wait for 10*clockPeriod;
+    continuar_in <= '0';
     wait for 101*clockPeriod; --timeout
     
     continuar_in <= '1';
     wait for 10*clockPeriod;
+    continuar_in <= '0';
     wait for 101*clockPeriod; --timeout
 
     continuar_in <= '1';
     wait for 10*clockPeriod;
-    wait for 101*clockPeriod; --timeout
-
-    continuar_in <= '1';
-    wait for 10*clockPeriod;
+    continuar_in <= '0';
     wait for 101*clockPeriod; --timeout
 
     ---- final do testbench
