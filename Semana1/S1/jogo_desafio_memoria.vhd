@@ -47,7 +47,6 @@ architecture estrutural of jogo_desafio_memoria is
     signal df_uc_jogadaCorreta        : std_logic;
     signal df_fimCR                   : std_logic;
     signal df_fimCJ                   : std_logic;
-    signal df_vidas                   : std_logic_vector(3 downto 0);
     signal df_uc_timeout              : std_logic;
     signal df_uc_timeoutJogadaInicial : std_logic;
     signal df_uc_jogadaFeita          : std_logic;
@@ -56,11 +55,26 @@ architecture estrutural of jogo_desafio_memoria is
     signal df_hex_memoria             : std_logic_vector(3 downto 0); 
     signal df_hex_jogada              : std_logic_vector(3 downto 0); 
     signal df_hex_rodada              : std_logic_vector(3 downto 0); 
-    signal uc_hex_estado              : std_logic_vector(3 downto 0); 
+    signal uc_hex_estado              : std_logic_vector(3 downto 0);
+    signal df_hex_vidas                   : std_logic_vector(3 downto 0);
     --led
     signal ligaLed : std_logic;
-	 
-	 signal fimDoJogo : std_logic;
+	--auxiliares
+	signal fimDoJogo : std_logic;
+    signal tipo      : std_logic_vector(1 downto 0);
+    --hexa7seg
+    signal entradaHEX0 : std_logic_vector(4 downto 0);
+    signal saidaHEX0   : std_logic_vector(6 downto 0);
+    signal entradaHEX1 : std_logic_vector(4 downto 0);
+    signal saidaHEX1   : std_logic_vector(6 downto 0);
+    signal entradaHEX2 : std_logic_vector(4 downto 0);
+    signal saidaHEX2   : std_logic_vector(6 downto 0);
+    signal entradaHEX3 : std_logic_vector(4 downto 0);
+    signal saidaHEX3   : std_logic_vector(6 downto 0);
+    signal entradaHEX4 : std_logic_vector(4 downto 0);
+    signal saidaHEX4   : std_logic_vector(6 downto 0);
+    signal entradaHEX5 : std_logic_vector(4 downto 0);
+    signal saidaHEX5   : std_logic_vector(6 downto 0);
 
     component fluxo_dados
         port (
@@ -128,14 +142,7 @@ architecture estrutural of jogo_desafio_memoria is
 
     component hexa7seg
         port (
-            hexa : in  std_logic_vector(3 downto 0);
-            sseg : out std_logic_vector(6 downto 0)
-        );
-    end component;
-    
-    component hexa7seg_modificado
-        port (
-            hexa : in  std_logic_vector(3 downto 0);
+            hexa : in  std_logic_vector(4 downto 0);
             sseg : out std_logic_vector(6 downto 0)
         );
     end component;
@@ -165,7 +172,7 @@ begin
             timeoutJogadaInicial => df_uc_timeoutJogadaInicial,
             jogada_feita => df_uc_jogadaFeita,
             vidaZerada => df_uc_vidaZerada,
-            vidas => df_vidas,
+            vidas => df_hex_vidas,
             db_contagem => df_hex_contagem,       
             db_memoria => df_hex_memoria,       
             db_jogada => df_hex_jogada,
@@ -217,39 +224,78 @@ begin
     db_jogadaIgualRodada <= df_uc_jogadaIgualRodada;
     db_jogada_correta <= df_uc_jogadaCorreta;
 
+    tipo <= "00" when uc_acertou='1' and uc_df_errou='0' else
+            "01" when uc_acertou='0' and uc_df_errou='1' else
+            "10" when uc_acertou='0' and uc_df_errou='1' and uc_timeout='1' else
+            "11";
+
+    with tipo select
+        entradaHEX0 <= "10000" when "00", --G
+                       "10101" when "01", --P
+                       "0" & df_hex_contagem when others;
+    with tipo select
+        entradaHEX1 <= "01010" when "00", --A
+                       "01110" when "01", --E
+                       "0" & df_hex_memoria when others;
+    with tipo select
+        entradaHEX2 <= "10001" when "00", --N
+                       "10110" when "01", --R
+                       "0" & df_hex_jogada when others;
+    with tipo select
+        entradaHEX3 <= "10010" when "00", --H
+                       "01101" when "01", --D
+                       "0" & df_hex_rodada when others;
+    with tipo select
+        entradaHEX4 <= "10011" when "00", --O
+                       "01110" when "01", --E
+                       "0" & df_hex_vidas when others;
+    with tipo select
+        entradaHEX5 <= "10100" when "00", --U
+                       "10100" when "01", --U
+                       "11001" when "11", --t
+                       "0" & uc_hex_estado when others;                   
+
+    db_contagem <= saidaHEX0;
+    db_memoria <= saidaHEX1;
+    db_jogadafeita <= saidaHEX2;
+    db_rodada <= saidaHEX3;
+    db_vidas <= saidaHEX4;
+    db_estado <= saidaHEX5;
+
+    
     HEX0: hexa7seg --contagem da rodada, contador principal
         port map (
-            hexa => df_hex_contagem,
-            sseg => db_contagem
+            hexa => entradaHEX0,
+            sseg => saidaHEX0
         );
     
     HEX1: hexa7seg --dado que esta na memoria
         port map (
-            hexa => df_hex_memoria,
-            sseg => db_memoria
+            hexa => entradaHEX1,
+            sseg => saidaHEX1
         );
     
     HEX2: hexa7seg --qual jogada foi feita
         port map (
-            hexa => df_hex_jogada,
-            sseg => db_jogadafeita
+            hexa => entradaHEX2,
+            sseg => saidaHEX2
         );
 
     HEX3: hexa7seg --mostra o endereço atual, contador secundário
         port map (
-            hexa => df_hex_rodada,
-            sseg => db_rodada
+            hexa => entradaHEX3,
+            sseg => saidaHEX3
         );
 
-    HEX4: hexa7seg --mostra o endereço atual, contador secundário
+    HEX4: hexa7seg --vidas
         port map (
-            hexa => df_vidas,
-            sseg => db_vidas
+            hexa => entradaHEX4,
+            sseg => saidaHEX4
         );
 
-    HEX5: hexa7seg_modificado
+    HEX5: hexa7seg --estado
         port map (
-            hexa => uc_hex_estado,
-            sseg => db_estado
+            hexa => entradaHEX5,
+            sseg => saidaHEX5
         );
 end estrutural ; -- estrutural
