@@ -26,6 +26,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.math_real.all;
+use ieee.std_logic_arith.all; 
+use ieee.std_logic_unsigned.all; 
 
 
 entity fluxo_dados is
@@ -279,8 +281,8 @@ begin
 
   timer: contador_m
     generic map(
-      M => 5000 --testar na placa
-      --M => 100 --(testar no modelsim)
+      --M => 5000 --testar na placa
+      M => 100 --(testar no modelsim)
     )
     port map(
       clock => clock,
@@ -297,8 +299,8 @@ begin
 
     timerJogadaInicial: contador_m
     generic map(
-      M => 2000 --testar na placa
-      --M => 50 --(testar no modelsim)
+      --M => 2000 --testar na placa
+      M => 50 --(testar no modelsim)
     )
     port map(
       clock => clock,
@@ -312,16 +314,17 @@ begin
     );
   
     contaJogadaInicial <= not zeraJogadaInicial;
-    s_vidas <= "0101" when zeraCR='1'; --reseta as vidas quando começa o jogo de novo
-    vidas <= s_vidas;
-    process(errou) is
+    process(errou, zeraCR) is
       begin
-        if(errou = '1' and s_vidas /= "0000") then 
-          s_vidas <= std_logic_vector(to_unsigned(to_integer(unsigned(s_vidas)) - 1, 4));
-          vidas <= s_vidas;
-        elsif s_vidas="0000" then
+        if zeraCR='1' then
+          s_vidas <= "0101";
+          vidaZerada <= '0';
+        elsif(errou = '1' and s_vidas /= "0000") then
+          s_vidas <= std_logic_vector(s_vidas(3 downto 0) - "0001");
+        elsif s_vidas="0001" then
           vidaZerada <= '1';
         end if;
+        vidas(3 downto 0) <= s_vidas(3 downto 0);
     end process;
 end architecture estrutural;
 

@@ -88,10 +88,10 @@ begin
         fimA                when Eatual=compara and igual='1' and fim='1' else
         fimE                when Eatual=compara and igual='0' else
         fimA                when Eatual=fimA and iniciar='0' else
-        fimE                when Eatual=fimE and iniciar='0' else
+        fimE                when Eatual=fimE and continuar='0' and iniciar='0' else
         perdeVida           when Eatual=fimE and vidaZerada='0' and continuar='1' else
-        fimT                when Eatual=fimT and iniciar='0' else
-        perdeVida           when Eatual=fimT and vidaZerada='0' and continuar='1' else
+        fimT                when Eatual=fimT and continuar='0' and iniciar='0' else
+        perdeVida           when Eatual=fimT and vidaZerada='0' and continuar='1' and iniciar='0' else
         espera              when Eatual=perdeVida else
         inicializa;
 
@@ -140,8 +140,7 @@ begin
                     '0' when others;
     
     with Eatual select
-        errou <='1' when fimE,
-                '1' when fimT,
+        errou <='1' when perdeVida,
                 '0' when others;
 
     with Eatual select

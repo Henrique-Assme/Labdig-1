@@ -35,7 +35,6 @@ architecture estrutural of jogo_desafio_memoria is
     signal uc_df_zeraR             : std_logic;
     signal uc_df_registraR         : std_logic;
     signal uc_acertou              : std_logic;
-    signal uc_errou                : std_logic;
     signal uc_timeout              : std_logic;
     signal uc_pronto               : std_logic;
     signal uc_ligaLed              : std_logic;
@@ -198,7 +197,7 @@ begin
             zeraR => uc_df_zeraR,  
             registraR => uc_df_registraR,
             acertou => uc_acertou,
-            errou => uc_errou,
+            errou => uc_df_errou,
             perdeTimeout => uc_timeout,
             pronto => uc_pronto,  
             ligaLed => uc_ligaLed, 
@@ -212,7 +211,7 @@ begin
                 botoes when others;
     
     ganhou <= uc_acertou;
-    perdeu <= uc_errou;
+    perdeu <= uc_df_errou;
     pronto <= uc_pronto;
     db_timeout <= uc_timeout;
     db_jogadaIgualRodada <= df_uc_jogadaIgualRodada;
