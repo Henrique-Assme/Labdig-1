@@ -51,10 +51,10 @@ begin
           "1001000" when hexa="10001" else --N
           "0001001" when hexa="10010" else --H
           "1000000" when hexa="10011" else --O
-          "0000001" when hexa="10100" else --U
+          "1000001" when hexa="10100" else --U
           "0001100" when hexa="10101" else --P
           "0101111" when hexa="10110" else --R
-          "1110000" when hexa="11001" else --t
+          "0000111" when hexa="11001" else --t
           "1111111";
 
 end architecture comportamental;

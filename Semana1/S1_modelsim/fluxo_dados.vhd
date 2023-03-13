@@ -43,7 +43,7 @@ entity fluxo_dados is
              registraR                : in std_logic; 
              escreveM                 : in std_logic; 
 				     resetaMemoria            : in std_logic;
-             errou                    : in std_logic;
+             perderVida               : in std_logic;
              chaves                   : in std_logic_vector (3 downto 0);
              jogadaIgualRodada        : out std_logic;  
              jogadaCorreta            : out std_logic; 
@@ -314,12 +314,12 @@ begin
     );
   
     contaJogadaInicial <= not zeraJogadaInicial;
-    process(errou, zeraCR) is
+    process(perderVida, zeraCR) is
       begin
         if zeraCR='1' then
           s_vidas <= "0101";
           vidaZerada <= '0';
-        elsif(errou = '1' and s_vidas /= "0000") then
+        elsif(perderVida = '1' and s_vidas /= "0000") then
           s_vidas <= std_logic_vector(s_vidas(3 downto 0) - "0001");
         elsif s_vidas="0001" then
           vidaZerada <= '1';

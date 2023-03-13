@@ -41,6 +41,7 @@ architecture estrutural of jogo_desafio_memoria is
     signal uc_df_escreveJogada     : std_logic;
 	signal uc_df_resetaMemoria     : std_logic;
     signal uc_df_errou             : std_logic;
+    signal uc_df_perderVida        : std_logic;
 
     --sinais que saem do DF
     signal df_uc_jogadaIgualRodada    : std_logic;
@@ -89,7 +90,7 @@ architecture estrutural of jogo_desafio_memoria is
             registraR                : in std_logic; 
             escreveM                 : in std_logic; 
             resetaMemoria            : in std_logic;
-            errou                    : in std_logic;
+            perderVida               : in std_logic;
             chaves                   : in std_logic_vector (3 downto 0);
             jogadaIgualRodada        : out std_logic;  
             jogadaCorreta            : out std_logic; 
@@ -131,6 +132,7 @@ architecture estrutural of jogo_desafio_memoria is
             registraR            : out std_logic; --df
             acertou              : out std_logic;
             errou                : out std_logic;
+            perderVida           : out std_logic;
             perdeTimeout         : out std_logic;    
             pronto               : out std_logic;
             ligaLed              : out std_logic;
@@ -162,7 +164,7 @@ begin
             registraR => uc_df_registraR, 
             escreveM => uc_df_escreveJogada,    
             resetaMemoria => uc_df_resetaMemoria,    
-            errou => uc_df_errou,                  
+            perderVida => uc_df_perderVida,                  
             chaves => botoes,
             jogadaIgualRodada => df_uc_jogadaIgualRodada, --saidas
             jogadaCorreta => df_uc_jogadaCorreta, 
@@ -205,6 +207,7 @@ begin
             registraR => uc_df_registraR,
             acertou => uc_acertou,
             errou => uc_df_errou,
+            perderVida => uc_df_perderVida,
             perdeTimeout => uc_timeout,
             pronto => uc_pronto,  
             ligaLed => uc_ligaLed, 
@@ -225,7 +228,7 @@ begin
     db_jogada_correta <= df_uc_jogadaCorreta;
 
     tipo <= "00" when uc_acertou='1' and uc_df_errou='0' else
-            "01" when uc_acertou='0' and uc_df_errou='1' else
+            "01" when uc_acertou='0' and uc_df_errou='1' and uc_timeout='0' else
             "10" when uc_acertou='0' and uc_df_errou='1' and uc_timeout='1' else
             "11";
 
@@ -252,7 +255,7 @@ begin
     with tipo select
         entradaHEX5 <= "10100" when "00", --U
                        "10100" when "01", --U
-                       "11001" when "11", --t
+                       "11001" when "10", --t
                        "0" & uc_hex_estado when others;                   
 
     db_contagem <= saidaHEX0;

@@ -31,6 +31,7 @@ architecture tb of jogo_desafio_memoria_tb_perdeu_timeout is
       clock                   : in  std_logic;
       reset                   : in  std_logic;
       iniciar                 : in  std_logic;
+      continuar               : in  std_logic;
       botoes                  : in  std_logic_vector (3 downto 0);
       leds                    : out std_logic_vector (3 downto 0);
       pronto                  : out std_logic;
@@ -41,6 +42,7 @@ architecture tb of jogo_desafio_memoria_tb_perdeu_timeout is
       db_rodada               : out std_logic_vector (6 downto 0);
       db_estado               : out std_logic_vector (6 downto 0);
       db_jogadafeita          : out std_logic_vector (6 downto 0);
+      db_vidas                : out std_logic_vector (6 downto 0);
       db_jogadaIgualRodada    : out std_logic;
       db_jogada_correta       : out std_logic;
       db_timeout              : out std_logic
@@ -48,10 +50,11 @@ architecture tb of jogo_desafio_memoria_tb_perdeu_timeout is
   end component;
   
   ---- Declaracao de sinais de entrada para conectar o componente
-  signal clk_in     : std_logic := '0';
-  signal rst_in     : std_logic := '0';
-  signal iniciar_in : std_logic := '0';
-  signal botoes_in  : std_logic_vector(3 downto 0) := "0000";
+  signal clk_in       : std_logic := '0';
+  signal rst_in       : std_logic := '0';
+  signal iniciar_in   : std_logic := '0';
+  signal continuar_in : std_logic := '0';
+  signal botoes_in    : std_logic_vector(3 downto 0) := "0000";
 
   ---- Declaracao dos sinais de saida
   signal leds_out                          : std_logic_vector(3 downto 0) := "0000";
@@ -63,6 +66,7 @@ architecture tb of jogo_desafio_memoria_tb_perdeu_timeout is
   signal rodada_out                        : std_logic_vector(6 downto 0) := "0000000";
   signal estado_out                        : std_logic_vector(6 downto 0) := "0000000";
   signal jogada_feita_out                  : std_logic_vector(6 downto 0) := "0000000";
+  signal vidas_out                         : std_logic_vector(6 downto 0) := "0000000";
   signal jogadaIgualRodada_out             : std_logic := '0';
   signal jogada_correta_out                : std_logic := '0';
   signal timeout_out                       : std_logic := '0';
@@ -83,6 +87,7 @@ begin
           clock                  => clk_in,
           reset                  => rst_in,
           iniciar                => iniciar_in,
+          continuar              => continuar_in,
           botoes                 => botoes_in,
           ganhou                 => ganhou_out,
           perdeu                 => perdeu_out,

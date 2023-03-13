@@ -13,7 +13,7 @@ Ecomparador_85
 Z0 w1678283959
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 161
+!i122 247
 Z3 dC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim
 Z4 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/comparador_85.vhd
 Z5 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/comparador_85.vhd
@@ -23,9 +23,9 @@ VnRX1cKGSWahUOZjWkD0Vo3
 !s100 UchionOWWKZd[S9Df?mH>0
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1678318924
+Z7 !s110 1678457449
 !i10b 1
-Z8 !s108 1678318924.000000
+Z8 !s108 1678457448.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/comparador_85.vhd|
 Z10 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/comparador_85.vhd|
 !i113 1
@@ -35,7 +35,7 @@ Adataflow
 R1
 R2
 DEx4 work 13 comparador_85 0 22 nRX1cKGSWahUOZjWkD0Vo3
-!i122 161
+!i122 247
 l41
 L37 20
 V1]eQ[UffKzW]]?63mLgma0
@@ -55,7 +55,7 @@ R0
 Z13 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R1
 R2
-!i122 162
+!i122 248
 R3
 Z14 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_163.vhd
 Z15 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_163.vhd
@@ -67,9 +67,9 @@ R6
 32
 R7
 !i10b 1
-R8
-Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_163.vhd|
-Z17 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_163.vhd|
+Z16 !s108 1678457449.000000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_163.vhd|
+Z18 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_163.vhd|
 !i113 1
 R11
 R12
@@ -78,7 +78,7 @@ R13
 R1
 R2
 DEx4 work 12 contador_163 0 22 Wj>hDW5JaQnFBm8n4zHQK1
-!i122 162
+!i122 248
 l34
 L32 29
 Vb^X@5ndgX5UJ@jUXZMM1M1
@@ -87,43 +87,43 @@ R6
 32
 R7
 !i10b 1
-R8
 R16
 R17
+R18
 !i113 1
 R11
 R12
 Econtador_m
 R0
-Z18 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z19 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
 R13
 R1
 R2
-!i122 163
+!i122 249
 R3
-Z19 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m.vhd
-Z20 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m.vhd
+Z20 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m.vhd
+Z21 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m.vhd
 l0
-Z21 L33 1
+Z22 L33 1
 V=JVQceFP9R>lOe9hWSEAC2
 !s100 VFGFOO0ZR:AVAChg@RbTZ2
 R6
 32
 R7
 !i10b 1
-R8
-Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m.vhd|
-Z23 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m.vhd|
+R16
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m.vhd|
+Z24 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m.vhd|
 !i113 1
 R11
 R12
 Acomportamental
-R18
+R19
 R13
 R1
 R2
 DEx4 work 10 contador_m 0 22 =JVQceFP9R>lOe9hWSEAC2
-!i122 163
+!i122 249
 l50
 L48 30
 Vc9oW`[=Bkk?ZXRLeTTjEO2
@@ -132,54 +132,54 @@ R6
 32
 R7
 !i10b 1
-R8
-R22
+R16
 R23
+R24
 !i113 1
 R11
 R12
 Econtador_m_tb
 R0
-R18
+R19
 R13
 R1
 R2
-!i122 164
+!i122 250
 R3
-Z24 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m_tb.vhd
-Z25 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m_tb.vhd
+Z25 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m_tb.vhd
+Z26 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m_tb.vhd
 l0
-Z26 L25 1
+Z27 L25 1
 VlSEE?_WPa3I^TMKCR^g0G3
 !s100 nFkdlQK@0K9`62MLI=9Z11
 R6
 32
-Z27 !s110 1678318925
+Z28 !s110 1678457450
 !i10b 1
-Z28 !s108 1678318925.000000
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m_tb.vhd|
-Z30 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m_tb.vhd|
+Z29 !s108 1678457450.000000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m_tb.vhd|
+Z31 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/contador_m_tb.vhd|
 !i113 1
 R11
 R12
 Atb
-R18
+R19
 R13
 R1
 R2
 DEx4 work 13 contador_m_tb 0 22 lSEE?_WPa3I^TMKCR^g0G3
-!i122 164
+!i122 250
 l64
 L28 128
 VCj<]Y^d<O8g6PJd6S[YkK3
 !s100 nAmIGGmT?M1SX2O?Nn]Yn1
 R6
 32
-R27
-!i10b 1
 R28
+!i10b 1
 R29
 R30
+R31
 !i113 1
 R11
 R12
@@ -187,21 +187,21 @@ Eedge_detector
 R0
 R1
 R2
-!i122 165
+!i122 251
 R3
-Z31 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/edge_detector.vhd
-Z32 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/edge_detector.vhd
+Z32 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/edge_detector.vhd
+Z33 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/edge_detector.vhd
 l0
-R26
+R27
 V5C=KRLAGRaYL1?AQ;E;9j1
 !s100 8YZ2^jBlaX4?0]W6fg5fQ2
 R6
 32
-R27
-!i10b 1
 R28
-Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/edge_detector.vhd|
-Z34 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/edge_detector.vhd|
+!i10b 1
+R29
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/edge_detector.vhd|
+Z35 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/edge_detector.vhd|
 !i113 1
 R11
 R12
@@ -209,88 +209,88 @@ Artl
 R1
 R2
 DEx4 work 13 edge_detector 0 22 5C=KRLAGRaYL1?AQ;E;9j1
-!i122 165
+!i122 251
 l39
 L34 21
 V[;JQ17iE0iTkHY<AjIT;13
 !s100 XhDFK>6^Pg;Cf>3KW;kN03
 R6
 32
-R27
-!i10b 1
 R28
-R33
+!i10b 1
+R29
 R34
+R35
 !i113 1
 R11
 R12
 Efluxo_dados
-Z35 w1678319817
-Z36 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z37 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-R18
+Z36 w1678404036
+Z37 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z38 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R19
 R13
 R1
 R2
-!i122 185
+!i122 252
 R3
-Z38 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/fluxo_dados.vhd
-Z39 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/fluxo_dados.vhd
+Z39 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/fluxo_dados.vhd
+Z40 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/fluxo_dados.vhd
 l0
-R21
-VQm`lEha:J_l5IDYemPD<?3
-!s100 Cb_@=E<@:miNaH_YGS]`]3
+R22
+V66G1hzAQD_5LCoTGT85dU2
+!s100 WlI;A?:V2EHHNXkH=L;?P2
 R6
 32
-Z40 !s110 1678319823
+R28
 !i10b 1
-Z41 !s108 1678319823.000000
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/fluxo_dados.vhd|
-Z43 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/fluxo_dados.vhd|
+R29
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/fluxo_dados.vhd|
+Z42 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/fluxo_dados.vhd|
 !i113 1
 R11
 R12
 Aestrutural
-Z44 DEx4 work 8 ram_16x4 0 22 g`PTnemeRgQL_3ISd6Mch0
-R36
+Z43 DEx4 work 8 ram_16x4 0 22 g`PTnemeRgQL_3ISd6Mch0
 R37
-R18
+R38
+R19
 R13
 R1
 R2
-DEx4 work 11 fluxo_dados 0 22 Qm`lEha:J_l5IDYemPD<?3
-!i122 185
+DEx4 work 11 fluxo_dados 0 22 66G1hzAQD_5LCoTGT85dU2
+!i122 252
 l169
-L65 266
-Vcac21jVgZ:ac@_bnEi2N?1
-!s100 :?XQ4Y?91YUT13k06P86W1
+L65 265
+V6HFD<@aP1ez@IgobRkzgQ3
+!s100 Nff2m5mW[_]iKo?FM2BU@1
 R6
 32
-R40
+R28
 !i10b 1
+R29
 R41
 R42
-R43
 !i113 1
 R11
 R12
 Ehexa7seg
-R0
+Z44 w1678405040
 R1
 R2
-!i122 168
+!i122 253
 R3
 Z45 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/hexa7seg.vhd
 Z46 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/hexa7seg.vhd
 l0
 Z47 L24 1
-VNzLIg6K]CUPT@eNgm@^Y33
-!s100 m70:2LbOnf0ODWJKbc?@F3
+Vz0TcCaFRTP[_6f^N][PIW3
+!s100 hScWFbDUVM1eDgPamk<dC1
 R6
 32
-Z48 !s110 1678318926
+Z48 !s110 1678457451
 !i10b 1
-Z49 !s108 1678318926.000000
+Z49 !s108 1678457451.000000
 Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/hexa7seg.vhd|
 Z51 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/hexa7seg.vhd|
 !i113 1
@@ -299,12 +299,12 @@ R12
 Acomportamental
 R1
 R2
-DEx4 work 8 hexa7seg 0 22 NzLIg6K]CUPT@eNgm@^Y33
-!i122 168
+DEx4 work 8 hexa7seg 0 22 z0TcCaFRTP[_6f^N][PIW3
+!i122 253
 l32
-Z52 L31 22
-VLD5BcVldF]OU>kfzM>nda2
-!s100 :T:`6D;TX>hG_Ki=fKn4^2
+L31 30
+VWAAD3PkS5UTPdEI=]ZaoL1
+!s100 QE]kDenheNV9;aVOY5K@]0
 R6
 32
 R48
@@ -319,21 +319,21 @@ Ehexa7seg_modificado
 R0
 R1
 R2
-!i122 167
+!i122 193
 R3
-Z53 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/hexa7seg _modificado.vhd
-Z54 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/hexa7seg _modificado.vhd
+Z52 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/hexa7seg _modificado.vhd
+Z53 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/hexa7seg _modificado.vhd
 l0
 R47
 V0mib?n7SPHOn^fTVo2^:E1
 !s100 VPdNnD:=;9RclY6YFGiU=2
 R6
 32
-R48
+Z54 !s110 1678403362
 !i10b 1
-R49
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/hexa7seg _modificado.vhd|
-Z56 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/hexa7seg _modificado.vhd|
+Z55 !s108 1678403362.000000
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/hexa7seg _modificado.vhd|
+Z57 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/hexa7seg _modificado.vhd|
 !i113 1
 R11
 R12
@@ -341,40 +341,40 @@ Acomportamental
 R1
 R2
 DEx4 work 19 hexa7seg_modificado 0 22 0mib?n7SPHOn^fTVo2^:E1
-!i122 167
+!i122 193
 l32
-R52
+L31 22
 VSX@g12SG[jQzl`lEU]HKm2
 !s100 ?cB5[QSmU8gfEc=STgfVz3
 R6
 32
-R48
+R54
 !i10b 1
-R49
 R55
 R56
+R57
 !i113 1
 R11
 R12
 Ejogo_desafio_memoria
-Z57 w1678318365
+Z58 w1678458040
 R1
 R2
-!i122 169
+!i122 267
 R3
-Z58 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria.vhd
-Z59 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria.vhd
+Z59 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria.vhd
+Z60 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria.vhd
 l0
 L4 1
 VRc<VfbgYI==MI:a5Ufdka2
 !s100 2nLL>zZ9Do4jS?cH_1_B;3
 R6
 32
-Z60 !s110 1678318927
+Z61 !s110 1678458047
 !i10b 1
-Z61 !s108 1678318927.000000
-Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria.vhd|
-Z63 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria.vhd|
+Z62 !s108 1678458047.000000
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria.vhd|
+Z64 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria.vhd|
 !i113 1
 R11
 R12
@@ -382,40 +382,40 @@ Aestrutural
 R1
 R2
 DEx4 work 20 jogo_desafio_memoria 0 22 Rc<VfbgYI==MI:a5Ufdka2
-!i122 169
-l143
-L27 229
-V0U_dkB7HY_n<T[3CTmgeX0
-!s100 Q39HzdSS2VZEfD;_X?j8o3
+!i122 267
+l152
+L27 278
+VIJEoOR0iS=GQY4CcDAGRg1
+!s100 ;6G?UJEVAJ3DobA3l?2`80
 R6
 32
-R60
-!i10b 1
 R61
+!i10b 1
 R62
 R63
+R64
 !i113 1
 R11
 R12
 Ejogo_desafio_memoria_tb_ganhou
-R0
+Z65 w1678458028
 R1
 R2
-!i122 170
+!i122 268
 R3
-Z64 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_ganhou.vhd
-Z65 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_ganhou.vhd
+Z66 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_ganhou.vhd
+Z67 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_ganhou.vhd
 l0
-Z66 L23 1
+Z68 L23 1
 VKLYFl[30WhDZk18^FJTF42
 !s100 J1^ZEYHMI;9jQDlZeKJjA3
 R6
 32
-R60
-!i10b 1
 R61
-Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_ganhou.vhd|
-Z68 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_ganhou.vhd|
+!i10b 1
+R62
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_ganhou.vhd|
+Z70 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_ganhou.vhd|
 !i113 1
 R11
 R12
@@ -423,40 +423,40 @@ Atb
 R1
 R2
 DEx4 work 30 jogo_desafio_memoria_tb_ganhou 0 22 KLYFl[30WhDZk18^FJTF42
-!i122 170
-l74
-L26 1170
-VLYE`9PoDZSIe2Qcmioo0i0
-!s100 m6V?BC@[^KI9;Rn]kd^WD3
+!i122 268
+l78
+L26 1176
+VTf?4bF`7k_Te<iDW@7hmQ0
+!s100 T<FWOEF]e?gMRS0bcHWef1
 R6
 32
-R60
-!i10b 1
 R61
-R67
-R68
+!i10b 1
+R62
+R69
+R70
 !i113 1
 R11
 R12
 Ejogo_desafio_memoria_tb_perdeu
-R0
+Z71 w1678458034
 R1
 R2
-!i122 171
+!i122 269
 R3
-Z69 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu.vhd
-Z70 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu.vhd
+Z72 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu.vhd
+Z73 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu.vhd
 l0
-R66
+R68
 VWbT?GN><iliY5=koDA>ik1
 !s100 ^f=ZWF[DcF7;XdVmfH<<?2
 R6
 32
-R60
+Z74 !s110 1678458048
 !i10b 1
-R61
-Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu.vhd|
-Z72 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu.vhd|
+Z75 !s108 1678458048.000000
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu.vhd|
+Z77 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu.vhd|
 !i113 1
 R11
 R12
@@ -464,93 +464,52 @@ Atb
 R1
 R2
 DEx4 work 30 jogo_desafio_memoria_tb_perdeu 0 22 WbT?GN><iliY5=koDA>ik1
-!i122 171
-l74
-L26 168
-VShCi;NVm<2?P_2z[9>G241
-!s100 YG27<LB]mdebS6ik8JL4I3
-R6
-32
-R60
-!i10b 1
-R61
-R71
-R72
-!i113 1
-R11
-R12
-Ejogo_desafio_memoria_tb_perdeu_continua
-Z73 w1678319757
-R1
-R2
-!i122 186
-R3
-Z74 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_continua.vhd
-Z75 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_continua.vhd
-l0
-R66
-VWoID8V>02CZG>1]=QN6<:1
-!s100 HB]SMakRE_oTlWkc9Ml[A2
-R6
-32
-R40
-!i10b 1
-R41
-Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_continua.vhd|
-Z77 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_continua.vhd|
-!i113 1
-R11
-R12
-Atb
-R1
-R2
-Z78 DEx4 work 39 jogo_desafio_memoria_tb_perdeu_continua 0 22 WoID8V>02CZG>1]=QN6<:1
-!i122 186
+!i122 269
 l78
-L26 200
-V3F>3GTF08@Kif7gGz3Xk92
-!s100 BZffoJd9Q;SXQ@H=dUK:@0
+L26 174
+ViCIRJTeQK2JIlf9a9RGS62
+!s100 ]j>4F8h47[Il9m4RIXADi3
 R6
 32
-R40
+R74
 !i10b 1
-R41
+R75
 R76
 R77
 !i113 1
 R11
 R12
-Ejogo_desafio_memoria_tb_perdeu_timeout
-R0
+Ejogo_desafio_memoria_tb_perdeu_continua
+Z78 w1678319757
 R1
 R2
-!i122 173
+!i122 257
 R3
-Z79 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout.vhd
-Z80 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout.vhd
+Z79 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_continua.vhd
+Z80 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_continua.vhd
 l0
-R66
-Vn1__SS_VJabgACmW`BYi43
-!s100 oQODQm_2UnP:PjGzhUz@j0
+R68
+VWoID8V>02CZG>1]=QN6<:1
+!s100 HB]SMakRE_oTlWkc9Ml[A2
 R6
 32
-Z81 !s110 1678318928
+Z81 !s110 1678457452
 !i10b 1
-Z82 !s108 1678318928.000000
-Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout.vhd|
-Z84 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout.vhd|
+Z82 !s108 1678457452.000000
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_continua.vhd|
+Z84 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_continua.vhd|
 !i113 1
 R11
 R12
 Atb
 R1
 R2
-DEx4 work 38 jogo_desafio_memoria_tb_perdeu_timeout 0 22 n1__SS_VJabgACmW`BYi43
-!i122 173
-l74
-L26 161
-Vd:=1gSeF:QWmXUO`;@Ce52
-!s100 LWS;b@l;jXl>mhNQgJRlb3
+DEx4 work 39 jogo_desafio_memoria_tb_perdeu_continua 0 22 WoID8V>02CZG>1]=QN6<:1
+!i122 257
+l78
+L26 200
+V3F>3GTF08@Kif7gGz3Xk92
+!s100 BZffoJd9Q;SXQ@H=dUK:@0
 R6
 32
 R81
@@ -561,44 +520,85 @@ R84
 !i113 1
 R11
 R12
-Ejogo_desafio_memoria_tb_perdeu_timeout_escrita
-R0
+Ejogo_desafio_memoria_tb_perdeu_timeout
+Z85 w1678457583
 R1
 R2
-!i122 174
+!i122 265
 R3
-Z85 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout_escrita.vhd
-Z86 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout_escrita.vhd
+Z86 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout.vhd
+Z87 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout.vhd
 l0
-R66
-V3^GmcOfBdIV[83hg3KgRR3
-!s100 8DM^akea?;z>KhcEWKnO[1
+R68
+Vn1__SS_VJabgACmW`BYi43
+!s100 oQODQm_2UnP:PjGzhUz@j0
 R6
 32
-R81
+Z88 !s110 1678457619
 !i10b 1
-R82
-Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout_escrita.vhd|
-Z88 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout_escrita.vhd|
+Z89 !s108 1678457619.000000
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout.vhd|
+Z91 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout.vhd|
 !i113 1
 R11
 R12
 Atb
 R1
 R2
-DEx4 work 46 jogo_desafio_memoria_tb_perdeu_timeout_escrita 0 22 3^GmcOfBdIV[83hg3KgRR3
-!i122 174
-l74
-L26 140
-Vh50V`h9DWD;^BRg^Y_0D@3
-!s100 XmlR6ABjSjjP4EP12GBjc3
+DEx4 work 38 jogo_desafio_memoria_tb_perdeu_timeout 0 22 n1__SS_VJabgACmW`BYi43
+!i122 265
+l78
+L26 166
+V0d=iIG17Bl2NnBIYjzaJl0
+!s100 GoJTAifCd9Y?U=FQE[7YC2
 R6
 32
-R81
-!i10b 1
-R82
-R87
 R88
+!i10b 1
+R89
+R90
+R91
+!i113 1
+R11
+R12
+Ejogo_desafio_memoria_tb_perdeu_timeout_escrita
+Z92 w1678458032
+R1
+R2
+!i122 270
+R3
+Z93 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout_escrita.vhd
+Z94 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout_escrita.vhd
+l0
+R68
+V3^GmcOfBdIV[83hg3KgRR3
+!s100 8DM^akea?;z>KhcEWKnO[1
+R6
+32
+R74
+!i10b 1
+R75
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout_escrita.vhd|
+Z96 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/jogo_desafio_memoria_tb_perdeu_timeout_escrita.vhd|
+!i113 1
+R11
+R12
+Atb
+R1
+R2
+Z97 DEx4 work 46 jogo_desafio_memoria_tb_perdeu_timeout_escrita 0 22 3^GmcOfBdIV[83hg3KgRR3
+!i122 270
+l78
+L26 146
+V6>nA:8c::8`AEHANBl@m;0
+!s100 9cCQ=H8EAV>7A`ElFaAkl1
+R6
+32
+R74
+!i10b 1
+R75
+R95
+R96
 !i113 1
 R11
 R12
@@ -607,21 +607,21 @@ R0
 R13
 R1
 R2
-!i122 175
+!i122 260
 R3
-Z89 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/ram_16x4.vhd
-Z90 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/ram_16x4.vhd
+Z98 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/ram_16x4.vhd
+Z99 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/ram_16x4.vhd
 l0
 L28 1
 Vg`PTnemeRgQL_3ISd6Mch0
 !s100 7_Oke2`[UPj15mR6JKQR]2
 R6
 32
-Z91 !s110 1678318929
+Z100 !s110 1678457453
 !i10b 1
-Z92 !s108 1678318929.000000
-Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/ram_16x4.vhd|
-Z94 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/ram_16x4.vhd|
+Z101 !s108 1678457453.000000
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/ram_16x4.vhd|
+Z103 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/ram_16x4.vhd|
 !i113 1
 R11
 R12
@@ -629,19 +629,19 @@ Aram_modelsim
 R13
 R1
 R2
-R44
-!i122 175
+R43
+!i122 260
 l90
 L70 40
 VW<X<c?LzFVB3KHZa6`TZ33
 !s100 @Wb^3GhPLl>oU<nW@hX`C0
 R6
 32
-R91
+R100
 !i10b 1
-R92
-R93
-R94
+R101
+R102
+R103
 !i113 1
 R11
 R12
@@ -649,19 +649,19 @@ Aram_mif
 R13
 R1
 R2
-R44
-!i122 175
+R43
+!i122 260
 l48
 L40 28
 V35TzLdD?hg?cR8AAFacOD1
 !s100 Q0QMUcJL86RTKThife6VD3
 R6
 32
-R91
+R100
 !i10b 1
-R92
-R93
-R94
+R101
+R102
+R103
 !i113 1
 R11
 R12
@@ -669,21 +669,21 @@ Eregistrador_n
 R0
 R1
 R2
-!i122 176
+!i122 261
 R3
-Z95 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/registrador_n.vhd
-Z96 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/registrador_n.vhd
+Z104 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/registrador_n.vhd
+Z105 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/registrador_n.vhd
 l0
 L36 1
 VEKNcmPT5oEBOJ4HY1h9:G0
 !s100 nZ9TMZfV7=cL8G[CVTO]Z1
 R6
 32
-R91
+Z106 !s110 1678457454
 !i10b 1
-R92
-Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/registrador_n.vhd|
-Z98 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/registrador_n.vhd|
+Z107 !s108 1678457454.000000
+Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/registrador_n.vhd|
+Z109 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/registrador_n.vhd|
 !i113 1
 R11
 R12
@@ -691,59 +691,59 @@ Acomportamental
 R1
 R2
 DEx4 work 13 registrador_n 0 22 EKNcmPT5oEBOJ4HY1h9:G0
-!i122 176
+!i122 261
 l51
 L49 16
 VCGVk>k6hO1hRHPj58^@:e1
 !s100 NJEJoUNzGSKQfC6FYC6Cz3
 R6
 32
-R91
+R106
 !i10b 1
-R92
-R97
-R98
+R107
+R108
+R109
 !i113 1
 R11
 R12
 Eunidade_controle
-Z99 w1678319316
+Z110 w1678403907
 R1
 R2
-!i122 181
+!i122 262
 R3
-Z100 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/unidade_controle.vhd
-Z101 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/unidade_controle.vhd
+Z111 8C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/unidade_controle.vhd
+Z112 FC:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/unidade_controle.vhd
 l0
 L22 1
-Vf^kRYiT[]CWcQ_^SjVVkS0
-!s100 eLGQE7k^ae_ciMh2<cGP`3
+VAW@f:9nD[6DG=BeJQ_TZ[3
+!s100 @5NXMBK^T<j:o9WBaH3@=3
 R6
 32
-Z102 !s110 1678319446
+R106
 !i10b 1
-Z103 !s108 1678319446.000000
-Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/unidade_controle.vhd|
-Z105 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/unidade_controle.vhd|
+R107
+Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/unidade_controle.vhd|
+Z114 !s107 C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_modelsim/unidade_controle.vhd|
 !i113 1
 R11
 R12
 Afsm
 R1
 R2
-DEx4 work 16 unidade_controle 0 22 f^kRYiT[]CWcQ_^SjVVkS0
-!i122 181
-l57
-L54 136
-V:_2zOMFm]OH`an^]N2oak2
-!s100 S5IaTLXR?=lZKIoanYmgb2
+DEx4 work 16 unidade_controle 0 22 AW@f:9nD[6DG=BeJQ_TZ[3
+!i122 262
+l58
+L55 140
+VP@34?3eWM5XEb:9z_LfmX3
+!s100 ofG:XjWVE9R4@BVP5H<1c3
 R6
 32
-R102
+R106
 !i10b 1
-R103
-R104
-R105
+R107
+R113
+R114
 !i113 1
 R11
 R12

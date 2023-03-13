@@ -42,6 +42,7 @@ entity unidade_controle is
         registraR            : out std_logic; --df
         acertou              : out std_logic;
         errou                : out std_logic;
+        perderVida           : out std_logic;
         perdeTimeout         : out std_logic;    
         pronto               : out std_logic;
         ligaLed              : out std_logic;
@@ -138,10 +139,14 @@ begin
                     '1' when fimE,
                     '1' when fimT,
                     '0' when others;
-    
     with Eatual select
-        errou <='1' when perdeVida,
-                '0' when others;
+        errou <=   '1' when fimE,
+                   '1' when fimT,
+                   '0' when others;
+
+    with Eatual select
+        perderVida <='1' when perdeVida,
+                     '0' when others;
 
     with Eatual select
         acertou <=  '1' when fimA,
