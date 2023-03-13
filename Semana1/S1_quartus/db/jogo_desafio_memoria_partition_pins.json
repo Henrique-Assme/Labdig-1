@@ -1,0 +1,249 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pronto",
+					"strict" : false
+				},
+				{
+					"name" : "ganhou",
+					"strict" : false
+				},
+				{
+					"name" : "perdeu",
+					"strict" : false
+				},
+				{
+					"name" : "db_contagem[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_contagem[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_contagem[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_contagem[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_contagem[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_contagem[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_contagem[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_memoria[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_memoria[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_memoria[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_memoria[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_memoria[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_memoria[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_memoria[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_rodada[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_rodada[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_rodada[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_rodada[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_rodada[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_rodada[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_rodada[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_vidas[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_vidas[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_vidas[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_vidas[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_vidas[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_vidas[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_vidas[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadaIgualRodada",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogada_correta",
+					"strict" : false
+				},
+				{
+					"name" : "db_timeout",
+					"strict" : false
+				},
+				{
+					"name" : "botoes[0]",
+					"strict" : false
+				},
+				{
+					"name" : "botoes[1]",
+					"strict" : false
+				},
+				{
+					"name" : "botoes[2]",
+					"strict" : false
+				},
+				{
+					"name" : "botoes[3]",
+					"strict" : false
+				},
+				{
+					"name" : "iniciar",
+					"strict" : false
+				},
+				{
+					"name" : "continuar",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

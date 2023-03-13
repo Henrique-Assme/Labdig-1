@@ -1,0 +1,165 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : -8.961
+TNS   : -17.744
+
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -4.270
+TNS   : -246.712
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 0.302
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : 1.237
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : -5.071
+TNS   : -10.053
+
+Type  : Slow 1100mV 85C Model Recovery 'clock'
+Slack : -0.825
+TNS   : -3.295
+
+Type  : Slow 1100mV 85C Model Removal 'clock'
+Slack : 0.934
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : 3.348
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.538
+TNS   : -94.349
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : -0.048
+TNS   : -0.048
+
+Type  : Slow 1100mV 0C Model Setup 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : -8.911
+TNS   : -17.700
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -4.357
+TNS   : -242.663
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : 0.284
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : 1.295
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : -5.213
+TNS   : -10.380
+
+Type  : Slow 1100mV 0C Model Recovery 'clock'
+Slack : -0.824
+TNS   : -3.291
+
+Type  : Slow 1100mV 0C Model Removal 'clock'
+Slack : 0.876
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : 3.540
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.538
+TNS   : -98.138
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : 0.079
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : -4.558
+TNS   : -8.883
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -1.676
+TNS   : -64.810
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : 0.690
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : -2.262
+TNS   : -4.402
+
+Type  : Fast 1100mV 85C Model Recovery 'clock'
+Slack : 0.176
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'clock'
+Slack : 0.442
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : 1.964
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.093
+TNS   : -10.682
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : -4.202
+TNS   : -8.218
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -1.452
+TNS   : -49.129
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : 0.641
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : -2.179
+TNS   : -4.266
+
+Type  : Fast 1100mV 0C Model Recovery 'clock'
+Slack : 0.229
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'clock'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : 1.997
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.094
+TNS   : -10.850
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'fluxo_dados:fluxoDados|s_vidas[1]'
+Slack : 0.255
+TNS   : 0.000
+
+------------------------------------------------------------

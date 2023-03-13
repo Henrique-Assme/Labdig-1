@@ -1,0 +1,17 @@
+
+State Machine - |jogo_desafio_memoria|unidade_controle:unidadeControle|Eatual
+Name Eatual.perdeVida Eatual.fimT Eatual.fimE Eatual.fimA Eatual.proximoDado Eatual.proximaRodada Eatual.incrementaEndereco Eatual.escreve Eatual.compara Eatual.registra Eatual.espera Eatual.mostraJogadas Eatual.inicializa Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Eatual.inicializa 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+Eatual.mostraJogadas 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+Eatual.espera 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+Eatual.registra 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+Eatual.compara 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+Eatual.escreve 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+Eatual.incrementaEndereco 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+Eatual.proximaRodada 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+Eatual.proximoDado 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+Eatual.fimA 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+Eatual.fimE 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.fimT 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.perdeVida 1 0 0 0 0 0 0 0 0 0 0 0 0 1 

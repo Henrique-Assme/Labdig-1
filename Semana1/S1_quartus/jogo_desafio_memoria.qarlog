@@ -1,0 +1,30 @@
+Quartus Prime Archive log --	C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/jogo_desafio_memoria.qarlog
+
+Archive:	C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/jogo_desafio_memoria.qar
+Date:		Mon Mar 13 00:51:53 2023
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/comparador_85.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/contador_163.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/contador_m.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/contador_m_tb.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/edge_detector.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/fluxo_dados.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/hexa7seg.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/jogo_desafio_memoria.qpf
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/jogo_desafio_memoria.qsf
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/jogo_desafio_memoria.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/jogo_desafio_memoria_tb_ganhou.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/jogo_desafio_memoria_tb_perdeu.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/jogo_desafio_memoria_tb_perdeu_continua.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/jogo_desafio_memoria_tb_perdeu_timeout.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/jogo_desafio_memoria_tb_perdeu_timeout_escrita.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/ram_16x4.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/registrador_n.vhd
+C:/Users/User/Desktop/Labdig/Projeto/Labdig-1/Semana1/S1_quartus/unidade_controle.vhd
+e:/intelfpga/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 19 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
